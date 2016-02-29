@@ -1,7 +1,7 @@
 Music by [Carl Czerny](https://en.wikipedia.org/wiki/Carl_Czerny) (1791 – 1857).
 
 Current content:
-* Czerny Op.139 Score 1
+* Czerny Op.139 Scores: 1, 2
 
 To generate the scores, install [LilyPond](http://www.lilypond.org/), and run 'make'.
 
