@@ -88,7 +88,7 @@
         \new Voice {
           \mark "Allegretto"
 
-          { e'' \staccato -3      e'' \( -3      g'' -5          e'' -3  }
+          { e''4 \staccato -3      e'' \( -3      g'' -5          e'' -3  }
           { c'' \) \staccato -1   c'' \( -1      e'' -3          c'' -1  }
           { d'' \) \staccato -2   d'' \( -2      f'' -4          d'' -2  }
           { e'' \) \staccato -3   e'' \staccato  e'' \staccato   e'' \staccato     }
@@ -137,6 +137,83 @@
           { <g  c'>1                    }
           { <g  d'>2 -5-1 <g f'> -5-1   }
           { <c'  e'>1 -4-2              }
+        }
+      }
+    >>
+  }
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% Score 3
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \score {
+    \new PianoStaff <<
+      #(set-accidental-style 'piano 'Score)
+
+      \set PianoStaff.instrumentName = \markup \center-column {
+        \fontsize #6 \bold "3"
+      }
+
+      \new Staff {
+        \new Voice {
+          \mark "Moderato"
+
+          { c''8  \( -1  d''     e'' f''             g'' -5 f''       e'' d''           }
+          { c''8         d''     e'' f''             g''    f''       e'' d''           }
+          { c''8         d''     e'' f''             g'' -5 e'' -3    g'' e''           }
+          { <d'' b'>4 -1-2 \)     <d'' b'>4            <d'' b'>2                          }
+          { c''8  \( -1  d''     e'' f''             g'' -5 f''       e'' d''           }
+          { c''8         d''     e'' f''             g''    f''       e'' d''           }
+
+          \break
+          %%%%
+
+	  { c''8     -1  g'' -5  f''   e''           d'' -2 f'' -4    e'' d''           }
+	  { c''8     -1  e'' -3  g''-5 e''           c''4   \)        r                 }
+
+          \bar ":.|.:"
+
+	  { b'8  \(  -1  c''     d'' e''             f'' -5 d'' -3    f'' d''           }
+	  { c''8     -1  d''     e'' f''             g'' -5 e'' -3    g'' e''           }
+	  { d''8     -1  e''     f'' g''             a'' -5 f'' -3    a'' f''           }
+          \break
+          %%%%
+
+	  { e''4            -2    g''  -4            e''              g''   \)          }
+	  { b'8  \(  -1  c''     d'' e''             f'' -5 d''       f'' d''           }
+	  { c''8     -1  d''     e'' f''             g'' -5 e''       g'' e''           }
+	  { f''8     -4  g''     f'' d'' -2          b'  -1 d'' -3    b' -1 d'' -3     }
+	  { c''4 \)  -1          c'''  \(  -5         c''  \)          r                 }
+
+          \bar ":.|.:"
+        }
+      }
+
+      \new Staff {
+        \new Voice {
+          { e'4-\markup {\italic legato} -3
+	                         g'            -1   f'            -2  g'            -1  }
+          { e'4                  g'                 f'                g'                }
+          { e'4                  g'                 c'                g'                }
+          { g4                   g'                 f'            -2  d'            -4  }
+          { e'4            -3    g'                 f'                g'                }
+          { e'4                  g'                 f'                g'                }
+
+          %%%%
+
+          { e'4                  g'                 <g b> -5-3        f'                }
+          { <c' e'> -4-2         g'                 <c' e'>           r                 }
+
+          { f'4            -2    g'            -1   f'                g'                }
+          { e'4            -3    g'                 e'                g'                }
+          { b4             -5    g'                 b                 g'                }
+
+          %%%%
+          { c'4            -5    g'                 c'                g'                }
+          { f'4                  g'                 f'                g'                }
+          { e'4                  g'                 e'                g'                }
+          { <g d'> -5-2          f'                 <g d'>            f'                }
+          { <c' e'> -4-2         <c' e'>            <c' e'>           r                 }
         }
       }
     >>
